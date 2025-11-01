@@ -43,19 +43,26 @@
 
 // export default LoginPage;
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 
 function LoginPage() {
   const [role, setRole] = useState('citizen');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    localStorage.setItem('role', selectedRole);
     e.preventDefault();
+    localStorage.setItem('role', role);
     alert(`Logging in as ${role} with ${email}`);
-    // Later: send to backend
+
+    // Redirect based on role
+    if (role === 'citizen') {
+      navigate('/report');
+    } else {
+      navigate('/view-issues');
+    }
   };
 
   return (
