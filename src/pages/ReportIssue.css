@@ -1,0 +1,35 @@
+.report-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fefefe;
+}
+
+.report-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.report-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-container select,
+.report-container input,
+.report-container textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.report-container button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

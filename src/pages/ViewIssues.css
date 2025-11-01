@@ -1,0 +1,25 @@
+.view-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.issue-list {
+  list-style: none;
+  padding: 0;
+}
+
+.issue-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.issue-card img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 4px;
+}
