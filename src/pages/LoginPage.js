@@ -48,6 +48,10 @@ function LoginPage() {
         />
 
         <button type="submit">Login</button>
+        <div className="hero-banner">
+  <h1>Welcome to JanSeva Portal</h1>
+  <p>Empowering citizens through transparent civic engagement</p>
+</div>
       </form>
 
       <Link to="/report">

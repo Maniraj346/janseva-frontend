@@ -19,6 +19,7 @@ function Navbar() {
         {(role === 'officer' || role === 'admin') && <Link to="/view-issues">View Issues</Link>}
         <button onClick={handleLogout}>Logout</button>
       </div>
+      <img src="/gov-logo.png" alt="Government of India" className="gov-logo" />
     </nav>
   );
 }
